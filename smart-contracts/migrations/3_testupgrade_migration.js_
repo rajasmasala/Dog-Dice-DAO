@@ -1,0 +1,10 @@
+const { deployProxy, upgradeProxy } = require( "@openzeppelin/truffle-upgrades");
+const DogDiceDAOGame = artifacts.require("DogDiceDAOGame");
+const DogDiceDAOGamev2_Test = artifacts.require("DogDiceDAOGamev2_Test");
+
+module.exports = async function (deployer) {
+  const oldInstance = await DogDiceDAOGame.deployed();
+  const newInstance = await upgradeProxy(oldInstance.address, DogDiceDAOGamev2_Test, {deployer})
+  console.log("Upgraded", newInstance.address);
+  await console.log(newInstance.upgradeTest());
+};

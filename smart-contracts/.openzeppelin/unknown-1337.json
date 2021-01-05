@@ -1,0 +1,374 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "751da31de137ac4c22f9221224d46780aca4015effbd04f371f6a8ff4a0c3ff3": {
+      "address": "0xd377596EA37Df5B68FbfE8c15cf3ceed815aB109",
+      "txHash": "0x9bfb1defed2aafeb78f419c4b3d0c16fefe6683e1c25b557b6b189f826826c97",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\Initializable.sol:24"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\Initializable.sol:29"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\GSN\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\pausableupgradeable.sol:28"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\pausableupgradeable.sol:96"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable",
+            "type": "t_contract(ProvableI)537",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:259"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "OAR",
+            "type": "t_contract(OracleAddrResolverI)543",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:260"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_network_name",
+            "type": "t_string_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:273"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_args",
+            "type": "t_mapping(t_bytes32,t_bytes32)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:280"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_sessionKeysHashVerified",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:281"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_uintMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:25"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_addressMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_address)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:26"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_boolMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:27"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_stringMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:28"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_bytesMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_bytes32)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:29"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_balanceMapping",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:30"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_matchFinishedMapping",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:45"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_matchPlayerMapping",
+            "type": "t_mapping(t_bytes32,t_address)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:46"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_matchStakeMapping",
+            "type": "t_mapping(t_bytes32,t_uint256)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:47"
+          },
+          {
+            "contract": "DogDiceDAOGame",
+            "label": "_matchWonMapping",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\UpgradableContract.sol:48"
+          }
+        ],
+        "types": {
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)"
+          },
+          "t_mapping(t_string_memory_ptr,t_address)": {
+            "label": "mapping(string => address)"
+          },
+          "t_mapping(t_string_memory_ptr,t_bool)": {
+            "label": "mapping(string => bool)"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)"
+          },
+          "t_mapping(t_string_memory_ptr,t_bytes32)": {
+            "label": "mapping(string => bytes32)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_mapping(t_bytes32,t_address)": {
+            "label": "mapping(bytes32 => address)"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_contract(ProvableI)537": {
+            "label": "contract ProvableI"
+          },
+          "t_contract(OracleAddrResolverI)543": {
+            "label": "contract OracleAddrResolverI"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_bytes32,t_bytes32)": {
+            "label": "mapping(bytes32 => bytes32)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "a559bf7479c783723b05c60fd001c7fb6c1ac4672c25e403c9b1e1990f6e5b74": {
+      "address": "0x826A9b74793557Fbd87cbd4719BC50c3174534D6",
+      "txHash": "0x236155894c320044528916341cd04ac58b01794867254a54459c70cb7d9d0c35",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\Initializable.sol:24"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\Initializable.sol:29"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\GSN\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\pausableupgradeable.sol:28"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\pausableupgradeable.sol:96"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable",
+            "type": "t_contract(ProvableI)936",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:259"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "OAR",
+            "type": "t_contract(OracleAddrResolverI)942",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:260"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_network_name",
+            "type": "t_string_storage",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:273"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_args",
+            "type": "t_mapping(t_bytes32,t_bytes32)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:280"
+          },
+          {
+            "contract": "usingProvable",
+            "label": "provable_randomDS_sessionKeysHashVerified",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\provableAPI_0.6.sol:281"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_uintMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:25"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_addressMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_address)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:26"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_boolMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:27"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_stringMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_string_storage)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:28"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_bytesMapping",
+            "type": "t_mapping(t_string_memory_ptr,t_bytes32)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:29"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_balanceMapping",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:30"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_matchFinishedMapping",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:45"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_matchPlayerMapping",
+            "type": "t_mapping(t_bytes32,t_address)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:46"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_matchStakeMapping",
+            "type": "t_mapping(t_bytes32,t_uint256)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:47"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "_matchWonMapping",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:48"
+          },
+          {
+            "contract": "DogDiceDAOGamev2_Test",
+            "label": "owner",
+            "type": "t_address",
+            "src": "..\\..\\..\\..\\..\\..\\..\\..\\C\\Users\\rajas\\Desktop\\Blockchain\\Dog Dice DAO\\website\\smart-contracts\\contracts\\TestContractUpgrade.sol:51"
+          }
+        ],
+        "types": {
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)"
+          },
+          "t_mapping(t_string_memory_ptr,t_address)": {
+            "label": "mapping(string => address)"
+          },
+          "t_mapping(t_string_memory_ptr,t_bool)": {
+            "label": "mapping(string => bool)"
+          },
+          "t_mapping(t_string_memory_ptr,t_string_storage)": {
+            "label": "mapping(string => string)"
+          },
+          "t_mapping(t_string_memory_ptr,t_bytes32)": {
+            "label": "mapping(string => bytes32)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_mapping(t_bytes32,t_address)": {
+            "label": "mapping(bytes32 => address)"
+          },
+          "t_mapping(t_bytes32,t_uint256)": {
+            "label": "mapping(bytes32 => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_contract(ProvableI)936": {
+            "label": "contract ProvableI"
+          },
+          "t_contract(OracleAddrResolverI)942": {
+            "label": "contract OracleAddrResolverI"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_bytes32,t_bytes32)": {
+            "label": "mapping(bytes32 => bytes32)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0xeB254EC098da9FC4DFa6704734319007d93109A2",
+    "txHash": "0xfae680c36de91f2d4d66315cc3ab810847cc7629bdc0e908bb239498dd7055e0"
+  }
+}

@@ -64,4 +64,23 @@ A kind of Dog Park. It will have a body corp.
     * There will be an About page which will also segue into some kind of blog that keeps people updated on the latest news re Dog Dice DAO
     * Just a super simple setup is the goal, but offering people opportunities for engagement despite being a rough product.
 * [ ] Make the website using React, Node, etc.
+* [ ] Make the game on Unity.
 * [ ] Push product to Github and then to Github Pages.
+
+## Research
+* (3rd January 2021)
+* [Open-Zeppelin's explainer re the proxy contract model](https://docs.openzeppelin.com/upgrades-plugins/1.x/proxies)
+* [Open Zeppelin's contract materials](https://docs.openzeppelin.com/contracts/3.x/api/proxy) were / are likely to be used in the proxy construction.
+* Per Open Zeppelin on storage issues:
+    >When upgrading a proxy from one implementation to another, the storage layout of both implementations must be compatible. This means that, even though you can completely change the code of the implementation, you cannot modify the existing contract state variables. The only operation allowed is to append new state variables after the ones already declared.
+
+* This was why Filip wanted us to use a template state-storage contract with every possible state mapping on it, then have the proxy and functional contract both inherit it. But this doesn't precisely fit with how Open Zeppelin wants us to do things, with an Open Zeppelin special proxyAdmin contract and proxy contract that uses randomized memory slots to magically not interfere with logic-contract storage mappings. According to OpenZeppelin, as long as we're careful with base contracts etc and inheritance and making sure the order of variable declaration never changes we'll be fine. At the same time, they themselves offer a single instance of declaring a placeholder variable. I.e. maybe we should just declare the full suite of placeholder mappings anyway? Ultimately, it might be best to do away with OpenZeppelin altogether and avoid the hassle of compliance with their deps.
+* Conclusion: Do up a contract per Open Zeppelin's terms, but put in all types of data type mappings and getter, setter, delete functions for each one (per [fravoll's pretty eternal-storage solidity-pattern example](https://github.com/fravoll/solidity-patterns/blob/master/docs/eternal_storage.md) but extended to match Filip's more extensive implementation), then deploy locally first and see what exactly Open Zeppelin decides to do / deploy. Obviously if I was worth anything as a coder I'd just read the code and instantly know what's going on but I don't have the energy - the docs are hard enough.
+
+Current status (5 Jan 2021):
+* [x] Had some sort of a go at the smart contracts. Basic stuff.
+* [x] Had some sort of a go at the game on Unity. Just a mockup.
+* [x] Basic mockup of some sort of landing page on Figma
+* [x] To do now: some of the webpage coding maybe using create-react-app.
+
+
